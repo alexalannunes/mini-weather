@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import moon from "./assets/night-mode.png";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="W">
+      <div className="W__top">
+        <span className="W__city">Pereiro, CE</span>
+      </div>
+      <div className="W__center">
+        <img src={moon} alt="moon" />
+        <h1 className="W__degree">45º</h1>
+        <h4 className="W__state">Nublado</h4>
+        <h6 className="W__wind">Vento</h6>
+        <span className="W__velocity">10 km/h</span>
+      </div>
+      <div className="W__bottom"></div>
     </div>
   );
 }
