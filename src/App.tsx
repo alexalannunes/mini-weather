@@ -1,5 +1,18 @@
+import React from "react";
 import { theme } from "./utils";
 function App() {
+  React.useEffect(() => {
+    const html: HTMLHtmlElement | null = document.querySelector("html");
+
+    /* eslint-disabled */
+    html?.style.setProperty("--background", theme.background);
+    html?.style.setProperty("--text", theme.foreground);
+
+    document
+      ?.querySelector('[name="theme-color"]')
+      ?.setAttribute("content", theme.background);
+  }, []);
+
   return (
     <div className="W">
       <div className="W__top">

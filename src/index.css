@@ -1,6 +1,6 @@
 :root {
-  --background: #090b11;
-  --text: #e1eaf2;
+  --background: #e1eaf2;
+  --text: #090b11;
 }
 
 * {
@@ -13,7 +13,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--background);
 }
 
 code {
@@ -154,6 +153,7 @@ html,
 body,
 #root {
   height: 100%;
+  background-color: var(--background);
   color: var(--text);
 }
 

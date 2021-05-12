@@ -30,15 +30,4 @@ const theme = {
 
 const appTheme = theme[getDayMode()];
 
-console.log(getDayMode());
-
-const html = document.querySelector("html");
-
-html.style.setProperty("--background", appTheme.background);
-html.style.setProperty("--text", appTheme.foreground);
-
-document
-  .querySelector('[name="theme-color"]')
-  .setAttribute("content", appTheme.background);
-
 export { appTheme as theme };
