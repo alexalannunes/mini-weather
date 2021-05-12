@@ -1,4 +1,4 @@
-import moon from "./assets/night-mode.png";
+import { theme } from "./utils";
 function App() {
   return (
     <div className="W">
@@ -6,7 +6,7 @@ function App() {
         <span className="W__city">Pereiro, CE</span>
       </div>
       <div className="W__center">
-        <img src={moon} alt="moon" />
+        <img src={theme.icon} alt="moon" />
         <h1 className="W__degree">45º</h1>
         <h4 className="W__state">Nublado</h4>
         <h6 className="W__wind">Vento</h6>

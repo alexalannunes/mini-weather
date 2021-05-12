@@ -1,6 +1,6 @@
 :root {
-  --theme-dark: #090b11;
-  --theme-light: #e1eaf2;
+  --background: #090b11;
+  --text: #e1eaf2;
 }
 
 * {
@@ -13,7 +13,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--theme-dark);
+  background: var(--background);
 }
 
 code {
@@ -154,7 +154,7 @@ html,
 body,
 #root {
   height: 100%;
-  color: #fff;
+  color: var(--text);
 }
 
 .W {
@@ -189,7 +189,7 @@ body,
 .W__degree {
   margin-top: 40px;
   font-weight: 600;
-  font-size: 4.8em;
+  font-size: 13vh;
 }
 .W__state {
   margin-top: 40px;
