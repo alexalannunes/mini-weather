@@ -29,10 +29,14 @@ function App() {
       ?.querySelector('[name="theme-color"]')
       ?.setAttribute("content", theme.background);
 
-    req().then((e) => {
-      setW(e.results);
-      localStorage.setItem("tm", JSON.stringify(e));
-    });
+    req()
+      .then((e) => {
+        setW(e.results);
+        // localStorage.setItem("tm", JSON.stringify(e));
+      })
+      .catch((error) => {
+        console.log(error);
+      });
 
     // setW(JSON.parse(localStorage.getItem("tm") || "{}").results || {});
   }, []);
