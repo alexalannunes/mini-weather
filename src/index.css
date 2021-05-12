@@ -169,14 +169,14 @@ body,
 }
 
 .W__top {
-  flex: 0.6;
+  flex: 0.4;
   align-items: center;
   justify-content: flex-start;
 }
 
 .W__city {
   margin-top: 50px;
-  font-weight: 500;
+  will-change: transform, opacity;
 }
 .W__center {
   align-items: center;
@@ -204,8 +204,40 @@ body,
 .W__velocity {
   font-size: 1em;
   margin-top: 15px;
+  font-weight: 600;
 }
 
 .W__bottom {
   flex: 1;
+}
+
+.W__forecast {
+  padding: 0 20px;
+  margin: 15px auto 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+.W-forecast__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 0;
+}
+
+.W-forecast__item-opacity {
+  opacity: 0.7;
+}
+.fadeIn {
+  animation: fadeIn 0.2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
