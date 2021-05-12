@@ -12,7 +12,7 @@ const req = () =>
     `https://api.hgbrasil.com/weather?woeid=${city_id}&key=${key}&format=${format}`,
     {
       method: "GET",
-      mode: "cors",
+      mode: "no-cors",
     }
   ).then((r) => r.json());
 
