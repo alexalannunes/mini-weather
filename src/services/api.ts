@@ -2,7 +2,7 @@
 
 const key = process.env.REACT_APP_API_KEY;
 const city_id = 443871;
-const format = "json-cors";
+const format = "json";
 
 // {
 //   url: "",
