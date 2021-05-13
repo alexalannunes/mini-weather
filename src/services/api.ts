@@ -1,21 +1,13 @@
 // import axios from "axios";
 
-const key = process.env.REACT_APP_API_KEY;
-const city_id = 443871;
-const format = "json";
+import axios from "axios";
 
-// {
-//   url: "",
-//   mode: "no-cors",
-// }
+const params = {
+  key: process.env.REACT_APP_API_KEY,
+  woeid: 443871,
+};
 
 const req = () =>
-  fetch(
-    `https://api.hgbrasil.com/weather?woeid=${city_id}&key=${key}&format=${format}`,
-    {
-      method: "GET",
-      mode: "no-cors",
-    }
-  ).then((r) => r.json());
+  axios.get("https://api.hgbrasil.com/weather", { params }).then((e) => e.data);
 
 export { req };

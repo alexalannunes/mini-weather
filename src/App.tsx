@@ -35,7 +35,7 @@ function App() {
         // localStorage.setItem("tm", JSON.stringify(e));
       })
       .catch((error) => {
-        console.log(error);
+        console.dir(error);
       });
 
     // setW(JSON.parse(localStorage.getItem("tm") || "{}").results || {});
