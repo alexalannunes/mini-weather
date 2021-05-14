@@ -9,7 +9,7 @@ const getDayMode = () => {
   // dia
   if (hour > 5 && hour < 18) {
     return "light";
-  } else if (hour > 0 && hour <= 5 && hour >= 18 && hour < 24) {
+  } else if ((hour >= 0 && hour <= 5) || (hour >= 18 && hour < 24)) {
     return "dark";
   }
   return "light";
