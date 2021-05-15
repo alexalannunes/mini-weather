@@ -208,6 +208,7 @@ body,
   height: 100%;
   background-color: var(--background);
   color: var(--text);
+  overflow-y: hidden;
 }
 
 .W {
