@@ -1,6 +1,7 @@
 {
   "short_name": "Mini-Weather",
-  "name": "Veja o clima de forma simples ⛅",
+  "name": "Mini-Weather ⛅",
+  "description": "Veja o clima de forma simples ⛅",
   "icons": [
     {
       "src": "favicon.ico",
@@ -45,6 +46,8 @@
   ],
   "start_url": ".",
   "display": "standalone",
+  "lang": "pt-BR",
+  "orientation": "portrait",
   "theme_color": "#000000",
   "background_color": "#e1eaf2"
 }
