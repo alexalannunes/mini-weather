@@ -1,3 +1,14 @@
 # Mini-Weather
 
-[https://evertonstrack.com.br/como-implementar-dark-mode/](https://evertonstrack.com.br/como-implementar-dark-mode/)
+## A simple React Weather App to show how my city is :cloud:
+
+### Screens
+
+#### Light and Dark
+
+___
+
+<img
+  width="40%"
+  src="./.github/weather-light.jpeg"
+/>

@@ -1,7 +1,5 @@
-// import iconSunLight from "../assets/light/sun.svg";
 import iconSunDark from "../assets/dark/sun.svg";
 import iconMoonLight from "../assets/light/moon.svg";
-// import iconMoonDark from "../assets/dark/moon.svg";
 
 const getDayMode = () => {
   const hour = new Date().getHours();
