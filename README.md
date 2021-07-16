@@ -1,8 +1,7 @@
 # Mini-Weather 🌤️
 
-## A simple React Weather App to show how my city is :cloud:
+### A simple React Weather App to show weather information :cloud:
 
-### Screens
 
 #### Light and Dark :smile:
 
@@ -11,9 +10,12 @@
 
 
 #### Features
-* Get user geolocation 
+
+* Get user geolocation 📱
+
 ___
 
+### Screens
 <img
   width="40%"
   src="./.github/weather-light.jpeg"
