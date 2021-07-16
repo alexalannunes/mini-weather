@@ -15,8 +15,9 @@
 
 ___
 
+
 ### Screens
-<img
-  width="40%"
-  src="./.github/weather-light.jpeg"
-/>
+
+Light                      |  Dark
+:-------------------------:|:-------------------------:
+![](./.github/weather-light.jpeg)  |  ![](./.github/weather-dark.jpeg)
