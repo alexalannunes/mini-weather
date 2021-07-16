@@ -40,14 +40,30 @@ function App() {
       ?.setAttribute("content", theme.background);
 
     if (navigator.onLine) {
-      req()
-        .then((e) => {
-          setW({ ...e.results, loaded: true });
-          localStorage.setItem("tm", JSON.stringify(e));
-        })
-        .catch((error) => {
-          ab();
-        });
+      window.navigator.geolocation.getCurrentPosition(
+        (geo) => {
+          req(geo.coords)
+            .then((e) => {
+              setW({ ...e.results, loaded: true });
+              localStorage.setItem("tm", JSON.stringify(e));
+            })
+            .catch((error) => {
+              ab();
+            });
+
+          return;
+        },
+        (error) => {
+          req()
+            .then((e) => {
+              setW({ ...e.results, loaded: true });
+              localStorage.setItem("tm", JSON.stringify(e));
+            })
+            .catch((error) => {
+              ab();
+            });
+        }
+      );
     } else {
       const div = document.createElement("div");
       div.textContent = "Offline: mostrando dados do cache";
